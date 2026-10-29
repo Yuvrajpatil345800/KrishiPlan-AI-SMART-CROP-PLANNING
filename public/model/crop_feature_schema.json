@@ -1,0 +1,106 @@
+{
+  "feature_order": [
+    "soil_n_mg_kg",
+    "soil_p_mg_kg",
+    "soil_k_mg_kg",
+    "soil_ph",
+    "soil_moisture_pct",
+    "avg_temp_c",
+    "forecast_rainfall_mm",
+    "humidity_pct",
+    "water_available_mm",
+    "groundwater_depth_m",
+    "land_size_acres",
+    "season_code",
+    "soil_type_code",
+    "irrigation_source_code",
+    "previous_crop_code",
+    "candidate_crop_code",
+    "market_price_inr_per_quintal",
+    "market_trend_pct",
+    "input_cost_inr_per_acre",
+    "potential_yield_quintal_per_acre",
+    "net_profit_potential_inr_per_acre",
+    "crop_water_requirement_mm",
+    "crop_opt_temp_c",
+    "crop_opt_rainfall_mm",
+    "crop_ph_min",
+    "crop_ph_max",
+    "crop_n_need",
+    "crop_p_need",
+    "crop_k_need",
+    "soil_compatibility_score",
+    "season_compatibility_score",
+    "rotation_compatibility_score",
+    "profitability_percentile"
+  ],
+  "categorical_codes": {
+    "season": {
+      "Kharif": 1,
+      "Rabi": 2,
+      "Zaid": 3
+    },
+    "soil_type": {
+      "Sandy": 1,
+      "Red": 2,
+      "Black": 3,
+      "Clay": 4,
+      "Loam": 5,
+      "Alluvial": 6
+    },
+    "irrigation_source": {
+      "Rainfed": 1,
+      "Borewell": 2,
+      "Canal": 3,
+      "Drip": 4,
+      "Pond": 5
+    },
+    "previous_crop": {
+      "None/Fallow": 0,
+      "Rice": 1,
+      "Wheat": 2,
+      "Maize": 3,
+      "Soybean": 4,
+      "Cotton": 5,
+      "Chickpea": 6,
+      "Groundnut": 7,
+      "Pearl Millet": 8,
+      "Sorghum": 9,
+      "Sugarcane": 10,
+      "Onion": 11,
+      "Tomato": 12,
+      "Turmeric": 13
+    },
+    "candidate_crop": {
+      "Rice": 1,
+      "Wheat": 2,
+      "Maize": 3,
+      "Soybean": 4,
+      "Cotton": 5,
+      "Chickpea": 6,
+      "Groundnut": 7,
+      "Pearl Millet": 8,
+      "Sorghum": 9,
+      "Sugarcane": 10,
+      "Onion": 11,
+      "Tomato": 12,
+      "Turmeric": 13
+    }
+  },
+  "derived_features": {
+    "net_profit_potential_inr_per_acre": "potential_yield_quintal_per_acre * market_price_inr_per_quintal - input_cost_inr_per_acre",
+    "profitability_percentile": "Percentile rank of net profit across all candidate crops for this farm scenario, from 0 to 100",
+    "soil_compatibility_score": "100 if soil type is in candidate crop preferred soils, otherwise 58",
+    "season_compatibility_score": "100 for the crop's primary preferred season; 78 for a secondary season; 12 when not a preferred season",
+    "rotation_compatibility_score": "76 for None/Fallow; 22 if previous crop equals candidate; 91 if previous crop is a legume and candidate is not; 84 if candidate is a legume; otherwise 72"
+  },
+  "feature_notes": {
+    "soil_n_mg_kg": "Synthetic numeric nitrogen proxy; measurement method/unit should be aligned with real soil-test data before deployment.",
+    "soil_p_mg_kg": "Synthetic numeric phosphorus proxy; measurement method/unit should be aligned with real soil-test data before deployment.",
+    "soil_k_mg_kg": "Synthetic numeric potassium proxy; measurement method/unit should be aligned with real soil-test data before deployment.",
+    "forecast_rainfall_mm": "Synthetic expected seasonal rainfall in millimetres for demonstration only.",
+    "water_available_mm": "Approximate synthetic seasonal water available to the plot, in mm.",
+    "market_price_inr_per_quintal": "Synthetic market-price assumption; replace with dated local mandi/e-NAM data."
+  },
+  "data_caution": "All training labels and crop profiles are synthetic assumptions. Score is not a scientifically validated agronomic recommendation."
+}

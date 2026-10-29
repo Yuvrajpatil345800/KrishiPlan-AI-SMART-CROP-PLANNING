@@ -1,0 +1,390 @@
+{
+  "dataset_note": "Synthetic demonstration profiles only. Validate all prices, yields, water requirements and sowing windows against local agronomic/market sources before real use.",
+  "season_sowing_windows": {
+    "Kharif": "June-July (region-dependent)",
+    "Rabi": "October-November (region-dependent)",
+    "Zaid": "February-March (region-dependent)"
+  },
+  "crops": [
+    {
+      "name": "Rice",
+      "code": 1,
+      "base_price": 2300,
+      "base_yield": 22,
+      "base_cost": 28000,
+      "water": 1350,
+      "opt_temp": 28,
+      "opt_rain": 1200,
+      "ph_min": 5.5,
+      "ph_max": 7.0,
+      "n": 85,
+      "p": 35,
+      "k": 45,
+      "sowing": {
+        "Kharif": "June-July"
+      },
+      "days": 125,
+      "preferred_soils": [
+        "Clay",
+        "Loam",
+        "Alluvial"
+      ],
+      "preferred_seasons": [
+        "Kharif"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Wheat",
+      "code": 2,
+      "base_price": 2450,
+      "base_yield": 18,
+      "base_cost": 22000,
+      "water": 520,
+      "opt_temp": 21,
+      "opt_rain": 500,
+      "ph_min": 6.0,
+      "ph_max": 7.8,
+      "n": 90,
+      "p": 40,
+      "k": 35,
+      "sowing": {
+        "Rabi": "October-November"
+      },
+      "days": 125,
+      "preferred_soils": [
+        "Loam",
+        "Clay",
+        "Alluvial",
+        "Black"
+      ],
+      "preferred_seasons": [
+        "Rabi"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Maize",
+      "code": 3,
+      "base_price": 2250,
+      "base_yield": 24,
+      "base_cost": 23000,
+      "water": 650,
+      "opt_temp": 26,
+      "opt_rain": 800,
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "n": 100,
+      "p": 40,
+      "k": 45,
+      "sowing": {
+        "Kharif": "June-July",
+        "Zaid": "February-March"
+      },
+      "days": 105,
+      "preferred_soils": [
+        "Loam",
+        "Black",
+        "Alluvial",
+        "Red"
+      ],
+      "preferred_seasons": [
+        "Kharif",
+        "Zaid"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Soybean",
+      "code": 4,
+      "base_price": 4600,
+      "base_yield": 9,
+      "base_cost": 20000,
+      "water": 620,
+      "opt_temp": 26,
+      "opt_rain": 800,
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "n": 45,
+      "p": 35,
+      "k": 35,
+      "sowing": {
+        "Kharif": "June-July"
+      },
+      "days": 105,
+      "preferred_soils": [
+        "Black",
+        "Loam",
+        "Red"
+      ],
+      "preferred_seasons": [
+        "Kharif"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Cotton",
+      "code": 5,
+      "base_price": 6800,
+      "base_yield": 9,
+      "base_cost": 36000,
+      "water": 950,
+      "opt_temp": 28,
+      "opt_rain": 800,
+      "ph_min": 6.0,
+      "ph_max": 8.0,
+      "n": 95,
+      "p": 40,
+      "k": 50,
+      "sowing": {
+        "Kharif": "June-July"
+      },
+      "days": 165,
+      "preferred_soils": [
+        "Black",
+        "Alluvial",
+        "Loam"
+      ],
+      "preferred_seasons": [
+        "Kharif"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Chickpea",
+      "code": 6,
+      "base_price": 5700,
+      "base_yield": 8,
+      "base_cost": 16000,
+      "water": 340,
+      "opt_temp": 22,
+      "opt_rain": 420,
+      "ph_min": 6.0,
+      "ph_max": 8.0,
+      "n": 35,
+      "p": 35,
+      "k": 30,
+      "sowing": {
+        "Rabi": "October-November"
+      },
+      "days": 105,
+      "preferred_soils": [
+        "Black",
+        "Loam",
+        "Sandy",
+        "Alluvial"
+      ],
+      "preferred_seasons": [
+        "Rabi"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Groundnut",
+      "code": 7,
+      "base_price": 6100,
+      "base_yield": 10,
+      "base_cost": 24000,
+      "water": 650,
+      "opt_temp": 27,
+      "opt_rain": 700,
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "n": 40,
+      "p": 40,
+      "k": 45,
+      "sowing": {
+        "Kharif": "June-July",
+        "Zaid": "February-March"
+      },
+      "days": 120,
+      "preferred_soils": [
+        "Sandy",
+        "Loam",
+        "Red"
+      ],
+      "preferred_seasons": [
+        "Kharif",
+        "Zaid"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Pearl Millet",
+      "code": 8,
+      "base_price": 2700,
+      "base_yield": 9,
+      "base_cost": 13500,
+      "water": 360,
+      "opt_temp": 30,
+      "opt_rain": 420,
+      "ph_min": 6.0,
+      "ph_max": 8.5,
+      "n": 40,
+      "p": 25,
+      "k": 25,
+      "sowing": {
+        "Kharif": "June-July"
+      },
+      "days": 85,
+      "preferred_soils": [
+        "Sandy",
+        "Loam",
+        "Black"
+      ],
+      "preferred_seasons": [
+        "Kharif"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Sorghum",
+      "code": 9,
+      "base_price": 3200,
+      "base_yield": 10,
+      "base_cost": 14500,
+      "water": 420,
+      "opt_temp": 28,
+      "opt_rain": 500,
+      "ph_min": 5.5,
+      "ph_max": 8.0,
+      "n": 45,
+      "p": 30,
+      "k": 30,
+      "sowing": {
+        "Kharif": "June-July",
+        "Rabi": "October-November"
+      },
+      "days": 105,
+      "preferred_soils": [
+        "Black",
+        "Loam",
+        "Sandy"
+      ],
+      "preferred_seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Sugarcane",
+      "code": 10,
+      "base_price": 340,
+      "base_yield": 650,
+      "base_cost": 78000,
+      "water": 1900,
+      "opt_temp": 29,
+      "opt_rain": 1400,
+      "ph_min": 6.0,
+      "ph_max": 8.0,
+      "n": 180,
+      "p": 60,
+      "k": 100,
+      "sowing": {
+        "Kharif": "February-March / June-July",
+        "Zaid": "February-March"
+      },
+      "days": 330,
+      "preferred_soils": [
+        "Loam",
+        "Alluvial",
+        "Clay"
+      ],
+      "preferred_seasons": [
+        "Kharif",
+        "Zaid"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Onion",
+      "code": 11,
+      "base_price": 1700,
+      "base_yield": 115,
+      "base_cost": 58000,
+      "water": 480,
+      "opt_temp": 22,
+      "opt_rain": 520,
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "n": 90,
+      "p": 35,
+      "k": 50,
+      "sowing": {
+        "Rabi": "October-November",
+        "Zaid": "January-February"
+      },
+      "days": 120,
+      "preferred_soils": [
+        "Loam",
+        "Black",
+        "Red",
+        "Alluvial"
+      ],
+      "preferred_seasons": [
+        "Rabi",
+        "Zaid"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Tomato",
+      "code": 12,
+      "base_price": 1000,
+      "base_yield": 145,
+      "base_cost": 78000,
+      "water": 600,
+      "opt_temp": 24,
+      "opt_rain": 650,
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "n": 100,
+      "p": 45,
+      "k": 65,
+      "sowing": {
+        "Rabi": "October-November",
+        "Zaid": "January-February"
+      },
+      "days": 115,
+      "preferred_soils": [
+        "Loam",
+        "Red",
+        "Alluvial"
+      ],
+      "preferred_seasons": [
+        "Rabi",
+        "Zaid"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    },
+    {
+      "name": "Turmeric",
+      "code": 13,
+      "base_price": 7800,
+      "base_yield": 80,
+      "base_cost": 62000,
+      "water": 1150,
+      "opt_temp": 27,
+      "opt_rain": 1300,
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "n": 100,
+      "p": 40,
+      "k": 90,
+      "sowing": {
+        "Kharif": "April-June (region dependent)"
+      },
+      "days": 240,
+      "preferred_soils": [
+        "Red",
+        "Loam",
+        "Clay"
+      ],
+      "preferred_seasons": [
+        "Kharif"
+      ],
+      "profile_note": "Synthetic demo profile; verify region-specific agronomic values before real use."
+    }
+  ]
+}

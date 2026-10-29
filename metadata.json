@@ -1,0 +1,6 @@
+{
+  "name": "KrishiPlan AI",
+  "description": "Intelligent agricultural planning and farm advisory platform for FAPE college project.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
